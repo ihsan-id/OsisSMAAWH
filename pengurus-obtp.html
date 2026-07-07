@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Struktur Kepengurusan OBTP SMA A. Wahid Hasyim.">
+    <title>Struktur Pengurus - Divisi OBTP SMA AWH</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logosmaawh.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pengurus.css">
+</head>
+
+<body style="background-color: var(--bg);">
+
+    <!-- =========================================
+                    NAVBAR
+    ========================================== -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+
+            <a href="index.html" class="logo">
+                <img src="assets/img/logosmaawh.png" alt="Logo OSIS">
+                <div class="logo-text">
+                    <h2>OSIS SMA AWH</h2>
+                    <span>Bhineka Tunas Pratiwi</span>
+                </div>
+            </a>
+
+            <nav class="desktop-menu">
+                <a href="index.html#home" class="nav-link">Beranda</a>
+                <a href="index.html#tentang" class="nav-link">Tentang</a>
+                <a href="index.html#proker" class="nav-link">Proker Unggulan</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Divisi <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pengurus-obtp.html" class="dropdown-card">
+                            <i class="ri-team-line"></i>
+                            <div>
+                                <h4>Divisi OBTP</h4>
+                                <p>Pengelola program kerja OBTP</p>
+                            </div>
+                        </a>
+                        <a href="pengurus-mpk.html" class="dropdown-card">
+                            <i class="ri-government-line"></i>
+                            <div>
+                                <h4>Komisi MPK</h4>
+                                <p>Pengawas dan penyalur aspirasi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html#galeri" class="nav-link">Galeri</a>
+                <a href="index.html#alumni" class="nav-link">Alumni</a>
+                <a href="index.html#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+
+                <button id="menuBtn" class="menu-btn"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button id="closeBtn" class="close-btn"><i class="ri-close-line"></i></button>
+        <div class="mobile-content">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#tentang">Tentang</a>
+            <a href="index.html#proker">Proker Unggulan</a>
+            <a href="pengurus-obtp.html">Divisi OBTP</a>
+            <a href="pengurus-mpk.html">Komisi MPK</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#alumni">Alumni</a>
+            <a href="index.html#kontak">Contact</a>
+        </div>
+    </div>
+
+    <!-- =========================================
+             PENGURUS HEADER & GRID
+    ========================================== -->
+    <section class="pengurus-page">
+        <div class="container">
+
+            <div class="pengurus-header">
+                <h2>Struktur Kepengurusan</h2>
+                <h2 class="neon-text">Divisi OBTP</h2>
+                <p>Mengenal lebih dekat para penggerak roda organisasi SMA A. Wahid Hasyim periode 2026/2027.</p>
+            </div>
+
+            <!-- KETUA (Top Level) -->
+            <div class="pengurus-grid-top" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Najib+Ali&background=random" alt="Najib Ali"></div>
+                        <div class="card-info">
+                            <div class="badge-role">Ketua Umum</div>
+                            <h4>Najib Ali Ahnaf</h4>
+                            <p class="pengurus-desc">Memimpin dan mengkoordinasikan seluruh kegiatan operasional organisasi OBTP secara umum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Dimitri+Harmaz&background=random" alt="Dimitri Harmaz"></div>
+                        <div class="card-info">
+                            <div class="badge-role secondary">Ketua 1</div>
+                            <h4>Dimitri Harmaz Al- Haramizah</h4>
+                            <p class="pengurus-desc">Membantu Ketua Umum dalam mengawasi jalannya kegiatan operasional dan program kerja.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Taqi+Ziaul&background=random" alt="Taqi Ziaul"></div>
+                        <div class="card-info">
+                            <div class="badge-role secondary">Ketua 2</div>
+                            <h4>M. Taqi Ziaul Firdaus</h4>
+                            <p class="pengurus-desc">Membantu Ketua Umum dan mewakili koordinasi antar divisi di lingkungan organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pengurus-divider">
+                <span>SEKRETARIS & BENDAHARA</span>
+            </div>
+
+            <div class="pengurus-grid">
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Yumna+Amelia&background=random" alt="Yumna Amelia"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris Umum</div>
+                            <h4>Yumna Amelia Putri</h4>
+                            <p class="pengurus-desc">Bertanggung jawab atas administrasi, persuratan, dan kearsipan organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Yazid+Hidayatulloh&background=random" alt="Yazid Hidayatulloh"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris 1</div>
+                            <h4>M. Yazid Hidayatulloh</h4>
+                            <p class="pengurus-desc">Mendampingi Sekretaris Umum dalam mengelola dokumen dan notulensi rapat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Amanda+Sofia&background=random" alt="Amanda Sofia"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris 2</div>
+                            <h4>Amanda Sofia Candraputri</h4>
+                            <p class="pengurus-desc">Membantu pengelolaan arsip, data anggota, dan surat-menyurat organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Aqila&background=random" alt="Aqila"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Bendahara Umum</div>
+                            <h4>Aqila</h4>
+                            <p class="pengurus-desc">Mengelola keuangan, anggaran kegiatan, dan pelaporan dana organisasi secara menyeluruh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Azzam+Naufal&background=random" alt="Azzam Naufal"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Bendahara 1</div>
+                            <h4>Azzam Naufal Dustin Ary Wibowo</h4>
+                            <p class="pengurus-desc">Mendampingi Bendahara Umum dalam kelancaran pembukuan dan sirkulasi dana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Megan+Melati&background=random" alt="Megan Melati"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Bendahara 2</div>
+                            <h4>Megan Melati Sukma</h4>
+                            <p class="pengurus-desc">Membantu pencatatan kas, inventarisasi, dan rekapitulasi pengeluaran organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pengurus-divider">
+                <span>KOORDINATOR SEKBID</span>
+            </div>
+
+            <div class="pengurus-grid">
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Arif+Kurniawan&background=random" alt="Arif Kurniawan"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Keagamaan</div>
+                            <h4>Arif Kurniawan</h4>
+                            <p class="pengurus-desc">Mengkoordinir kegiatan ibadah, rohani, dan peringatan hari besar keagamaan di sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Jesika+Kirana+Larasati&background=random" alt="Jesika Kirana Larasati"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">PHB</div>
+                            <h4>Jesika Kirana Larasati</h4>
+                            <p class="pengurus-desc">Menjaga hubungan baik antar siswa, guru, serta pihak luar, dan membangun relasi positif.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Afifah+nur+fadilah&background=random" alt="Afifah nur fadilah"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">IT</div>
+                            <h4>Afifah nur fadilah</h4>
+                            <p class="pengurus-desc">Mengelola publikasi digital, media sosial, dan infrastruktur teknologi pendukung OSIS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Fathan+wiraguna&background=random" alt="Fathan wiraguna"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Pengembangan Diri</div>
+                            <h4>Fathan wiraguna</h4>
+                            <p class="pengurus-desc">Memfasilitasi minat, bakat, dan potensi siswa melalui berbagai program pelatihan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=M.+Rasya&background=random" alt="M.Rasya hasanudin"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Humasy</div>
+                            <h4>M.Rasya hasanudin</h4>
+                            <p class="pengurus-desc">Menyampaikan informasi penting kepada siswa dan menjadi jembatan komunikasi OSIS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Indriani+Pritana&background=random" alt="Indriani Pritana"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Kewirausahaan</div>
+                            <h4>Indriani Pritana</h4>
+                            <p class="pengurus-desc">Mengelola kegiatan dana usaha, koperasi siswa, dan melatih jiwa entrepreneurship.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Athalla+fachri+pradana&background=random" alt="Athalla fachri pradana"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Kebersihan</div>
+                            <h4>Athalla fachri pradana</h4>
+                            <p class="pengurus-desc">Bertanggung jawab atas kebersihan lingkungan sekolah dan program pelestarian lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Hammam+Mumtaza&background=random" alt="Hammam Mumtaza"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Kedisiplinan</div>
+                            <h4>Hammam Mumtaza</h4>
+                            <p class="pengurus-desc">Menegakkan tata tertib, kedisiplinan siswa, dan keamanan lingkungan sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER (Simplified) -->
+    <footer
+        style="text-align: center; padding: 40px; color: var(--gray); border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px;">
+        <p>&copy; 2026 Divisi OBTP SMA A. Wahid Hasyim. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('show');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('show');
+        });
+    </script>
+
+    <!-- Main JS for Theme Toggle -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

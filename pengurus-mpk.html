@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Struktur Kepengurusan MPK SMA A. Wahid Hasyim.">
+    <title>Struktur Pengurus - Komisi MPK SMA AWH</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logosmaawh.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pengurus.css">
+</head>
+
+<body style="background-color: var(--bg);">
+
+    <!-- =========================================
+                    NAVBAR
+    ========================================== -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+
+            <a href="index.html" class="logo">
+                <img src="assets/img/logosmaawh.png" alt="Logo OSIS">
+                <div class="logo-text">
+                    <h2>OSIS SMA AWH</h2>
+                    <span>Bhineka Tunas Pratiwi</span>
+                </div>
+            </a>
+
+            <nav class="desktop-menu">
+                <a href="index.html#home" class="nav-link">Beranda</a>
+                <a href="index.html#tentang" class="nav-link">Tentang</a>
+                <a href="index.html#proker" class="nav-link">Proker Unggulan</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Divisi <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pengurus-obtp.html" class="dropdown-card">
+                            <i class="ri-team-line"></i>
+                            <div>
+                                <h4>Divisi OBTP</h4>
+                                <p>Pengelola program kerja OBTP</p>
+                            </div>
+                        </a>
+                        <a href="pengurus-mpk.html" class="dropdown-card">
+                            <i class="ri-government-line"></i>
+                            <div>
+                                <h4>Komisi MPK</h4>
+                                <p>Pengawas dan penyalur aspirasi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html#galeri" class="nav-link">Galeri</a>
+                <a href="index.html#alumni" class="nav-link">Alumni</a>
+                <a href="index.html#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+
+                <button id="menuBtn" class="menu-btn"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button id="closeBtn" class="close-btn"><i class="ri-close-line"></i></button>
+        <div class="mobile-content">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#tentang">Tentang</a>
+            <a href="index.html#proker">Proker Unggulan</a>
+            <a href="pengurus-obtp.html">Divisi OBTP</a>
+            <a href="pengurus-mpk.html">Komisi MPK</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#alumni">Alumni</a>
+            <a href="index.html#kontak">Contact</a>
+        </div>
+    </div>
+
+    <!-- =========================================
+             PENGURUS HEADER & GRID
+    ========================================== -->
+    <section class="pengurus-page">
+        <div class="container">
+
+            <div class="pengurus-header">
+                <h2>Struktur Kepengurusan</h2>
+                <h2 class="neon-text">Komisi MPK</h2>
+                <p>Mengenal lebih dekat para penggerak roda organisasi SMA A. Wahid Hasyim periode 2026/2027.</p>
+            </div>
+
+            <!-- KETUA (Top Level) -->
+            <div class="pengurus-grid-top" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Faqih+Akif&background=random" alt="Faqih Akif"></div>
+                        <div class="card-info">
+                            <div class="badge-role mpk">Ketua Umum</div>
+                            <h4>Faqih Akif Almaghribi Rahmat</h4>
+                            <p class="pengurus-desc">Bertanggung jawab penuh atas seluruh arah kegiatan dan kebijakan organisasi Komisi MPK.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Agis+Salman&background=random" alt="Agis Salman"></div>
+                        <div class="card-info">
+                            <div class="badge-role mpk secondary">Ketua 1</div>
+                            <h4>Agis Salman Alfaritzi</h4>
+                            <p class="pengurus-desc">Membantu Ketua Umum dalam mengatur berjalannya internal organisasi dan operasional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Atmadja+Hibrizi&background=random" alt="Atmadja Hibrizi"></div>
+                        <div class="card-info">
+                            <div class="badge-role mpk secondary">Ketua 2</div>
+                            <h4>Atmadja Hibrizi</h4>
+                            <p class="pengurus-desc">Membantu Ketua Umum dalam hubungan antar lembaga dan eksternal organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pengurus-divider">
+                <span>PENGURUS HARIAN MPK</span>
+            </div>
+
+            <div class="pengurus-grid">
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Zahira+Athifa&background=random" alt="Zahira Athifa"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris Umum</div>
+                            <h4>Zahira Athifa Dzakira</h4>
+                            <p class="pengurus-desc">Bertanggung jawab atas seluruh sistem administrasi dan arsip Komisi MPK.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=TB+Arya&background=random" alt="TB Arya"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris 1</div>
+                            <h4>TB Arya Zaky</h4>
+                            <p class="pengurus-desc">Mendampingi Sekretaris Umum dalam mengelola dokumen dan korespodensi surat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Sek+Lali&background=random" alt="Sek Lali"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Sekretaris 2</div>
+                            <h4>Sek Lali</h4>
+                            <p class="pengurus-desc">Membantu pencatatan notulensi agenda rapat dan pengarsipan hasil kegiatan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Rifanny+Maula&background=random" alt="Rifanny Maula"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Bendahara Umum</div>
+                            <h4>Rifanny Maula Syifa</h4>
+                            <p class="pengurus-desc">Bertanggung jawab atas perumusan dan pengelolaan sistem keuangan Komisi MPK.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Asiah+Nazmin&background=random" alt="Asiah Nazmin"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Bendahara 1</div>
+                            <h4>Asiah Nazmin Latifah Hamid</h4>
+                            <p class="pengurus-desc">Membantu Bendahara Umum dalam kelancaran sirkulasi dan transparansi dana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pengurus-divider">
+                <span>KOORDINATOR KOMISI</span>
+            </div>
+
+            <div class="pengurus-grid">
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Habibati+Nasywa&background=random" alt="Habibati Nasywa"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi A - Keagamaan</div>
+                            <h4>Habibati Nasywa Salsabila</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program kerja keagamaan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Saif+Nadindra&background=random" alt="Saif Nadindra"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi B - PHB</div>
+                            <h4>Saif Nadindra Muntaha</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi jalannya program kerja Pembinaan Hukum Bangsa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Sefynes+Bianda&background=random" alt="Sefynes Bianda"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi C - Ilmu Teknologi</div>
+                            <h4>Sefynes Bianda Satarena</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program kerja teknologi dan media informasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Mumtaz+Irfan&background=random" alt="Mumtaz Irfan"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi D - Pengembangan Diri</div>
+                            <h4>Mumtaz Irfan Yusro</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program kerja minat, bakat, dan ekstrakurikuler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Zahra+Talita&background=random" alt="Zahra Talita"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi E - Humasy</div>
+                            <h4>Zahra Talita Zakira</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program kerja relasi humas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Rafli+Panji&background=random" alt="Rafli Panji"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi F - Kebersihan</div>
+                            <h4>Rafli Panji Setyanto</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program pelestarian lingkungan dan kebersihan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Qamarina+Nafisa&background=random" alt="Qamarina Nafisa"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi G - Kewirausahaan</div>
+                            <h4>Qamarina Nafisa</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program kerja pembinaan kewirausahaan sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neon-card small-card">
+                    <div class="neon-inner">
+                        <div class="card-img-wrapper"><img src="https://ui-avatars.com/api/?name=Andaka+Riski&background=random" alt="Andaka Riski"></div>
+                        <div class="card-info">
+                            <div class="badge-role outline">Komisi H - Kedisiplinan</div>
+                            <h4>Andaka Riski</h4>
+                            <p class="pengurus-desc">Mengevaluasi dan mengawasi program penegakan tata tertib serta disiplin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER (Simplified) -->
+    <footer
+        style="text-align: center; padding: 40px; color: var(--gray); border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px;">
+        <p>&copy; 2026 Komisi MPK SMA A. Wahid Hasyim. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('show');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('show');
+        });
+    </script>
+
+    <!-- Main JS for Theme Toggle -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

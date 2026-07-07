@@ -1,0 +1,289 @@
+/* =========================================
+             PENGURUS PAGE CSS
+========================================== */
+
+.pengurus-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Elements */
+.pengurus-page::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(74,222,128,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.pengurus-page::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: -150px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.pengurus-page .container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Header */
+.pengurus-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pengurus-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pengurus-header .neon-text {
+    font-size: 3rem;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #4ADE80;
+    text-shadow: 0 0 15px rgba(74,222,128,0.5);
+    margin-bottom: 15px;
+}
+
+.pengurus-header p {
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Grid Layouts */
+.pengurus-grid-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pengurus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+/* Divider */
+.pengurus-divider {
+    text-align: center;
+    position: relative;
+    margin: 60px 0 40px;
+}
+
+.pengurus-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    z-index: 1;
+}
+
+.pengurus-divider span {
+    position: relative;
+    background: var(--bg);
+    padding: 0 20px;
+    color: #4ADE80;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    z-index: 2;
+    display: inline-block;
+}
+
+/* =========================================
+             NEON CARD CSS
+========================================== */
+
+.neon-card {
+    position: relative;
+    border-radius: 20px;
+    padding: 3px;
+    background: transparent;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform 0.3s ease;
+}
+
+.neon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(74, 222, 128, 0.15);
+}
+
+/* Animated Gradient Border */
+.neon-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        from 0deg,
+        transparent 0%,
+        transparent 20%,
+        #4ADE80 40%,
+        #3B82F6 50%,
+        #4ADE80 60%,
+        transparent 80%,
+        transparent 100%
+    );
+    animation: rotateNeon 4s linear infinite;
+    z-index: -2;
+}
+
+@keyframes rotateNeon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Inner Background */
+.neon-card::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: var(--card-bg);
+    border-radius: 17px;
+    z-index: -1;
+}
+
+/* Card Content */
+.neon-inner {
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 17px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Image Wrapper */
+.card-img-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background: var(--section-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    color: var(--text-muted);
+}
+
+/* Small Cards variation */
+.small-card .neon-inner {
+    padding: 25px 15px;
+}
+
+.small-card .card-img-wrapper {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.small-card .placeholder-icon {
+    font-size: 2.2rem;
+}
+
+/* Badges */
+.badge-role {
+    display: inline-block;
+    padding: 5px 12px;
+    background: rgba(74,222,128,0.15);
+    color: #4ADE80;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.badge-role.secondary {
+    background: rgba(59,130,246,0.15);
+    color: #60A5FA;
+}
+
+.badge-role.mpk {
+    background: rgba(167,139,250,0.15);
+    color: #C084FC;
+}
+
+.badge-role.outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+
+/* Names */
+.card-info h4 {
+    color: var(--dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.small-card .card-info h4 {
+    font-size: 1rem;
+}
+
+/* Descriptions */
+.pengurus-desc {
+    font-size: 0.85rem;
+    color: var(--gray, #9ca3af);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .pengurus-header h2 { font-size: 2rem; }
+    .pengurus-header .neon-text { font-size: 2.5rem; }
+    
+    .pengurus-grid-top {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}

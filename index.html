@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website resmi OSIS & MPK SMA A. Wahid Hasyim - Bhineka Tunas Pratiwi. Organisasi Siswa Intra Sekolah yang bergerak dalam pengembangan potensi siswa.">
+    <title>OSIS & MPK SMA A. Wahid Hasyim</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logosmaawh.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- =========================================
+                    NAVBAR
+    ========================================== -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+
+            <a href="#home" class="logo">
+                <img src="assets/img/logosmaawh.png" alt="Logo OSIS">
+                <div class="logo-text">
+                    <h2>OBTP & MPK</h2>
+                    <span>Bhineka Tunas Pertiwi</span>
+                </div>
+            </a>
+
+            <nav class="desktop-menu">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#proker" class="nav-link">Proker Unggulan</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Divisi <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pengurus-obtp.html" class="dropdown-card">
+                            <i class="ri-team-line"></i>
+                            <div>
+                                <h4>Divisi OBTP</h4>
+                                <p>Pengelola program kerja OBTP</p>
+                            </div>
+                        </a>
+                        <a href="pengurus-mpk.html" class="dropdown-card">
+                            <i class="ri-government-line"></i>
+                            <div>
+                                <h4>Komisi MPK</h4>
+                                <p>Pengawas dan penyalur aspirasi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#galeri" class="nav-link">Galeri</a>
+                <a href="#alumni" class="nav-link">Alumni</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+
+                <button id="menuBtn" class="menu-btn"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button id="closeBtn" class="close-btn"><i class="ri-close-line"></i></button>
+        <div class="mobile-content">
+            <a href="#home">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#proker">Proker Unggulan</a>
+            <a href="pengurus-obtp.html">Divisi OBTP</a>
+            <a href="pengurus-mpk.html">Komisi MPK</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#alumni">Alumni</a>
+            <a href="#kontak">Contact</a>
+        </div>
+    </div>
+
+    <!-- =========================================
+                HERO SECTION
+    ========================================== -->
+    <section class="hero" id="home">
+
+        <!-- Particle Background for Hero -->
+        <div id="hero-particles"></div>
+
+        <div class="hero__background">
+            <div class="hero__overlay"></div>
+            <img src="assets/img/sekolah.jpg" class="hero__bg active" alt="Sekolah">
+            <img src="assets/img/pensi.jpeg" class="hero__bg" alt="Pensi">
+            <img src="assets/img/paskib.jpg" class="hero__bg" alt="Paskibra">
+            <img src="assets/img/ger.webp" class="hero__bg" alt="Kegiatan">
+        </div>
+
+        <div class="hero__blur blur-1"></div>
+        <div class="hero__blur blur-2"></div>
+
+        <div class="hero__counter">
+            <span class="hero__counter-num active-num">01</span>
+            <div class="hero__counter-line">
+                <div class="hero__counter-progress"></div>
+            </div>
+            <span class="hero__counter-num">04</span>
+        </div>
+
+        <div class="container hero__container">
+
+            <!-- LEFT -->
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <i class="ri-team-fill"></i>
+                    Organisasi Siswa Intra Sekolah
+                    <span class="hero__dot"></span>
+                </div>
+
+                <h3 class="hero__small-title">Bhineka Tunas Pratiwi</h3>
+
+                <h1 class="hero__title">
+                    <span id="changingText">Selamat Datang</span>
+                </h1>
+
+                <h2 class="hero__school">
+                    OSIS & MPK<br>SMA A. Wahid Hasyim
+                </h2>
+
+                <p class="hero__description">
+                    Wadah bagi siswa untuk berkarya, berinovasi, dan menginspirasi.
+                    Bersama kita ciptakan generasi yang unggul, berakhlak mulia,
+                    dan siap menghadapi masa depan.
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="#tentang" class="btn btn-primary" id="btnKenaliKami">
+                        Kenali Kami <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a href="#proker" class="btn btn-outline" id="btnProgramKerja">
+                        Program Kerja <i class="ri-calendar-line"></i>
+                    </a>
+                </div>
+
+                <div class="hero__social">
+                    <span>Ikuti Kami</span>
+                    <a href="#" id="socialIG" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="#" id="socialYT" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+                    <a href="#" id="socialTT" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                    <a href="#" id="socialWeb" aria-label="Website"><i class="ri-global-line"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero__image">
+                <div class="hero__circle"></div>
+
+                <!-- Foto Ketua & Wakil -->
+                <img src="assets/img/ketua.png" class="hero__person hero__ketua" alt="Ketua OSIS">
+                <img src="assets/img/wakil.png" class="hero__person hero__wakil" alt="Wakil Ketua">
+
+                <!-- Stat Card Kanan Atas -->
+                <div class="hero__stat">
+                    <i class="ri-team-fill"></i>
+                    <h2>500+</h2>
+                    <p>Siswa Aktif</p>
+                </div>
+
+                <!-- Stat Card Kanan Bawah -->
+                <div class="hero__stat hero__stat--2">
+                    <i class="ri-trophy-fill"></i>
+                    <h2>25+</h2>
+                    <p>Prestasi</p>
+                </div>
+
+                <!-- Profile Card Bawah -->
+                <div class="hero__profile">
+                    <div class="profile">
+                        <small>Ketua Umum Komisi MPK</small>
+                        <h3>Faqih Akif Almaghribi Rahmat</h3>
+                        <p>Berani · Amanah · Peduli</p>
+                    </div>
+                    <div class="profile__logo">
+                        <img src="assets/img/logosmaawh.png" alt="Logo">
+                    </div>
+                    <div class="profile">
+                        <small>Ketua Umum OBTP</small>
+                        <h3>Najib Ali Ahnaf</h3>
+                        <p>Disiplin · Kreatif · Visioner</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero__indicator">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="hero__scroll" id="scrollDown">
+            <span>Scroll Down</span>
+            <i class="ri-arrow-down-line"></i>
+        </div>
+
+    </section>
+
+    <!-- =========================================
+                TENTANG KAMI
+    ========================================== -->
+    <section class="about" id="tentang">
+
+        <div class="about__header">
+            <div class="about__badge">
+                <i class="ri-information-line"></i> Tentang Kami
+            </div>
+            <h2 class="about__title">Mengenal <span>OSIS & MPK</span><br>SMA A. Wahid Hasyim</h2>
+            <p class="about__subtitle">
+                Organisasi yang lahir dari semangat, digerakkan oleh dedikasi, dan bertujuan
+                menciptakan generasi penerus bangsa yang berkarakter dan berprestasi.
+            </p>
+        </div>
+
+        <div class="container about__container" style="margin-bottom: 80px;">
+            <!-- LEFT: INFO SMA AWH -->
+            <div class="about__content">
+                <div class="about__identity">
+                    <img src="assets/img/logosmaawh.png" alt="Logo SMA AWH"
+                        style="width: 60px; height: 60px; object-fit: contain;">
+                    <div>
+                        <h4>SMA A. Wahid Hasyim</h4>
+                        <span>Tebuireng Jombang</span>
+                    </div>
+                </div>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8;">
+                    SMA A. Wahid Hasyim Tebuireng Jombang didirikan pada tahun 1975 oleh KH. Yusuf Hasyim. Lembaga ini
+                    mengaktualisasikan visi historis Pahlawan Nasional KH. Abdul Wahid Hasyim mengenai modernisasi
+                    pendidikan Islam.
+                </p>
+                <p class="about__desc" style="text-align: justify; line-height: 1.8; margin-top: 15px;">
+                    SMA AWH berhasil menyintesiskan kurikulum nasional Kementerian Pendidikan dengan kurikulum Diniyah
+                    (pesantren), sehingga melahirkan sistem dualistik yang komprehensif. Dinamika integrasi tersebut
+                    secara logis memengaruhi tata kelola kesiswaan melalui pembentukan OSIS Bhinneka Tunas Pertiwi
+                    (OBTP), yang berperan sebagai representasi formal Organisasi Siswa Intra Sekolah.
+                </p>
+            </div>
+
+            <!-- RIGHT: GALERI FOTO SMA AWH -->
+            <div class="about__gallery">
+                <div class="about__img-main">
+                    <img src="assets/img/DJI_20260421094347_0028_D.JPG" alt="SMA A. Wahid Hasyim"
+                        style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="about__img-badge">
+                        <i class="ri-building-fill"></i> SMA AWH Tebuireng
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container about__container" style="margin-bottom: 40px;">
+
+            <!-- LEFT: INFO MPK -->
+            <div class="about__content">
+                <div class="about__identity">
+                    <img src="assets/img/logosmaawh.png" alt="Logo MPK"
+                        style="width: 60px; height: 60px; object-fit: contain;">
+                    <div>
+                        <h4>Komisi MPK</h4>
+                        <span>Majelis Perwakilan Kelas</span>
+                    </div>
+                </div>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8;">
+                    Majelis Perwakilan Kelas (MPK) adalah lembaga legislatif siswa yang berada dibawah naungan SMA A.
+                    Wahid Hasyim Tebuireng yang berperan sebagai wadah aspirasi peserta didik serta menjadi mitra kerja
+                    OSIS Bhinneka Tunas Pertiwi (OBTP) dalam menjalankan program-program sekolah. MPK bertugas
+                    mengawasi, mengevaluasi, dan memberikan masukan terhadap kinerja OSIS agar kegiatan yang
+                    dilaksanakan sesuai dengan kebutuhan dan kepentingan warga sekolah.
+                </p>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8; margin-top: 15px;">
+                    Di SMA A. Wahid Hasyim Tebuireng, MPK memiliki struktural yang di awasi langsung oleh Dewan Pembina
+                    yang akan membimbing jalannya organisasi melalui Formatur atau Badan Pengurus Harian. Untuk
+                    mendukung pelaksanaan tugas MPK, organisasi ini dibagi kedalam delapan komisi yang memiliki bidang
+                    kerja masing-masing.
+                </p>
+
+
+            </div>
+
+            <!-- RIGHT: GALERI FOTO MPK -->
+            <div class="about__gallery">
+                <div class="about__img-main">
+                    <img src="assets/img/download (4).jpg" alt="Kegiatan MPK"
+                        onerror="this.src='assets/img/FRS00737.JPG'">
+                    <div class="about__img-badge">
+                        <i class="ri-government-fill"></i> MPK SMA AWH
+                    </div>
+                </div>
+                <div class="about__img-grid">
+                    <div class="about__img-small">
+                        <img src="assets/img/download (3).jpg" alt="Rapat MPK"
+                            onerror="this.src='assets/img/DJI_20260421094347_0028_D.JPG'">
+                        <div class="about__img-overlay"><i class="ri-group-line"></i></div>
+                    </div>
+                    <div class="about__img-small">
+                        <img src="assets/img/download (5).jpg" alt="Aspirasi"
+                            onerror="this.src='assets/img/DJI_20260427112136_0042_D.JPG'">
+                        <div class="about__img-overlay"><i class="ri-file-list-3-line"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PENGURUS MPK -->
+        <div class="container about__pengurus" style="margin-bottom: 80px;">
+            <div class="about__cards" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div class="id-card id-card--mpk">
+                    <div class="id-card__inner">
+                        <div class="id-card__sidebar">
+                            <div class="id-card__logo">
+                                <img src="assets/img/logosmaawh.png" alt="Logo SMA AWH">
+                            </div>
+                            <div class="id-card__vert-wrapper">
+                                <div class="id-card__vert-text">M P K</div>
+                                <div class="id-card__vert-subtext">Majelis Perwakilan Kelas</div>
+                            </div>
+                        </div>
+                        <div class="id-card__main">
+                            <div class="id-card__header">
+                                MAJELIS PERWAKILAN KELAS<br>SMA A. WAHID HASYIM
+                            </div>
+                            <div class="id-card__photo">
+                                <img src="assets/img/ketua.png" alt="Ketua MPK">
+                            </div>
+                            <div class="id-card__name">Nama Ketua MPK</div>
+                            <div class="id-card__position">KETUA MPK</div>
+                        </div>
+                    </div>
+                    <div class="id-card__footer">
+                        Adil · Aspiratif · Kritis
+                    </div>
+                </div>
+
+                <div class="id-card id-card--mpk">
+                    <div class="id-card__inner">
+                        <div class="id-card__sidebar">
+                            <div class="id-card__logo">
+                                <img src="assets/img/logosmaawh.png" alt="Logo SMA AWH">
+                            </div>
+                            <div class="id-card__vert-wrapper">
+                                <div class="id-card__vert-text">M P K</div>
+                                <div class="id-card__vert-subtext">Majelis Perwakilan Kelas</div>
+                            </div>
+                        </div>
+                        <div class="id-card__main">
+                            <div class="id-card__header">
+                                MAJELIS PERWAKILAN KELAS<br>SMA A. WAHID HASYIM
+                            </div>
+                            <div class="id-card__photo">
+                                <img src="assets/img/wakil.png" alt="Wakil Ketua MPK"
+                                    onerror="this.src='assets/img/ketua.png'">
+                            </div>
+                            <div class="id-card__name">Nama Wakil MPK</div>
+                            <div class="id-card__position">WAKIL KETUA MPK</div>
+                        </div>
+                    </div>
+                    <div class="id-card__footer">
+                        Tegas · Komunikatif · Responsif
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__more-action" style="text-align: center; margin-top: 30px;">
+                <a href="pengurus-mpk.html" class="about__cta"
+                    style="display: inline-flex; justify-content: center; width: auto; padding: 14px 32px;">
+                    Lihat Struktur Selengkapnya <i class="ri-group-line" style="margin-left: 8px;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container about__container" style="margin-bottom: 40px;">
+
+            <!-- LEFT: GALERI FOTO OBTP -->
+            <div class="about__gallery">
+                <div class="about__img-main">
+                    <img src="assets/img/DJI_20260427112136_0042_D.JPG" alt="Foto Sekolah SMA AWH">
+                    <div class="about__img-badge">
+                        <i class="ri-team-fill"></i> OSIS Bhineka Tunas Pratiwi
+                    </div>
+                </div>
+                <div class="about__img-grid">
+                    <div class="about__img-small">
+                        <img src="assets/img/DJI_20260421094347_0028_D.JPG" alt="Gedung Sekolah">
+                        <div class="about__img-overlay"><i class="ri-landscape-line"></i></div>
+                    </div>
+                    <div class="about__img-small">
+                        <img src="assets/img/FRS00737.JPG" alt="Kegiatan OSIS">
+                        <div class="about__img-overlay"><i class="ri-group-line"></i></div>
+                    </div>
+                </div>
+                <div class="about__float-card">
+                    <div class="about__float-stat">
+                        <span class="about__float-num">500+</span>
+                        <span class="about__float-label">Siswa Aktif</span>
+                    </div>
+                    <div class="about__float-divider"></div>
+                    <div class="about__float-stat">
+                        <span class="about__float-num">25+</span>
+                        <span class="about__float-label">Prestasi</span>
+                    </div>
+                    <div class="about__float-divider"></div>
+                    <div class="about__float-stat">
+                        <span class="about__float-num">12+</span>
+                        <span class="about__float-label">Program Kerja</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: INFO OBTP -->
+            <div class="about__content">
+                <div class="about__identity">
+                    <img src="assets/img/logosmaawh.png" alt="Logo OBTP"
+                        style="width: 60px; height: 60px; object-fit: contain;">
+                    <div>
+                        <h4>Divisi OBTP</h4>
+                        <span>Osis Bhinneka Tunas Pertiwi</span>
+                    </div>
+                </div>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8;">
+                    OBTP Merupakan organisasi yang berada dalam naungan sekolah SMA A. Wahid Hasyim Tebuireng Jombang.
+                    OBTP sendiri memiliki kepanjangan yaitu Osis Bhineka Tunas Pertiwi, yang bermakna Osis sebagai
+                    Organisasi yang berada dilingkungan sekolah, Bhinneka yang berarti berbeda beda, Tunas juga memiliki
+                    arti pemuda pemudi, dan Pertiwi bermakna yang cinta tanah air. Maka kalau disambungkan makna dari
+                    nama OBTP sendiri yaitu organisasi yang berada dalam lingkungan sekolah yang didalamnya terdapat
+                    pemuda pemudi cinta tanah air.
+                </p>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8; margin-top: 15px;">
+                    OBTP memikul nomenklatur yang merefleksikan internalisasi nasionalisme dan pluralisme di tengah
+                    heterogenitas latar belakang santri. Sebagai tempat ladang kepemimpinan, organisasi ini
+                    mengonstruksi nilai nilai demokrasi modern yang diselaraskan dengan tradisi spiritual pesantren.
+                    OBTP adalah organisasi yang di dalamnya terkumpul para siswa siswi yang diberi kesempatan untuk
+                    terlibat dalam penyelenggaraan kegiatan sekolah. Melalui OBTP, siswa siswi diajak untuk menjadi agen
+                    perubahan di lingkungan sekolah, mengorganisir berbagai kegiatan, serta berperan dalam meningkatkan
+                    kualitas kehidupan sekolah.
+                </p>
+
+                <p class="about__desc" style="text-align: justify; line-height: 1.8; margin-top: 15px;">
+                    Di SMA A. Wahid Hasyim Tebuireng Jombang, OBTP menjadi pusat koordinasi berbagai kegiatan, baik itu
+                    akademik maupun non akademik, yang melibatkan seluruh siswa siswi dan civitas sekolah AWH kita.
+                    Organisasi ini memberikan kesempatan bagi siswa untuk belajar tentang pengelolaan kegiatan,
+                    penyusunan anggaran, komunikasi antar anggota, dan bagaimana menghadapi tantangan dalam memimpin
+                    sebuah organisasi. Selain itu, OBTP juga memiliki tanggung jawab besar dalam meralisasikan aspirasi
+                    siswa siswi dan menjaga hubungan yang harmonis antara siswa siswi dengan pihak sekolah.
+                </p>
+
+                <a href="#proker" class="about__cta" style="margin-top: 25px;">
+                    Lihat Program Kerja <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- PENGURUS OBTP -->
+        <div class="container about__pengurus" style="margin-bottom: 80px;">
+            <div class="about__cards" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div class="id-card id-card--obtp">
+                    <div class="id-card__inner">
+                        <div class="id-card__sidebar">
+                            <div class="id-card__logo">
+                                <img src="assets/img/logosmaawh.png" alt="Logo SMA AWH">
+                            </div>
+                            <div class="id-card__vert-wrapper">
+                                <div class="id-card__vert-text">OBTP</div>
+                                <div class="id-card__vert-subtext">Osis Bhinneka Tunas Pertiwi</div>
+                            </div>
+                        </div>
+                        <div class="id-card__main">
+                            <div class="id-card__header">
+                                OSIS BHINNEKA TUNAS PERTIWI<br>SMA A. WAHID HASYIM
+                            </div>
+                            <div class="id-card__photo">
+                                <img src="assets/img/ketua.png" alt="Ketua OBTP">
+                            </div>
+                            <div class="id-card__name">M. Naufal Zaky</div>
+                            <div class="id-card__position">KETUA OBTP</div>
+                        </div>
+                    </div>
+                    <div class="id-card__footer">
+                        Berani · Amanah · Tanggung Jawab
+                    </div>
+                </div>
+
+                <div class="id-card id-card--obtp">
+                    <div class="id-card__inner">
+                        <div class="id-card__sidebar">
+                            <div class="id-card__logo">
+                                <img src="assets/img/logosmaawh.png" alt="Logo SMA AWH">
+                            </div>
+                            <div class="id-card__vert-wrapper">
+                                <div class="id-card__vert-text">OBTP</div>
+                                <div class="id-card__vert-subtext">Osis Bhinneka Tunas Pertiwi</div>
+                            </div>
+                        </div>
+                        <div class="id-card__main">
+                            <div class="id-card__header">
+                                OSIS BHINNEKA TUNAS PERTIWI<br>SMA A. WAHID HASYIM
+                            </div>
+                            <div class="id-card__photo">
+                                <img src="assets/img/wakil.png" alt="Wakil Ketua OBTP">
+                            </div>
+                            <div class="id-card__name">Fadhil Ramadhan</div>
+                            <div class="id-card__position">WAKIL KETUA OBTP</div>
+                        </div>
+                    </div>
+                    <div class="id-card__footer">
+                        Disiplin · Kreatif · Peduli
+                    </div>
+                </div>
+            </div>
+            <div class="about__more-action" style="text-align: center; margin-top: 30px;">
+                <a href="pengurus-obtp.html" class="about__cta"
+                    style="display: inline-flex; justify-content: center; width: auto; padding: 14px 32px;">
+                    Lihat Struktur Selengkapnya <i class="ri-group-line" style="margin-left: 8px;"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =========================================
+                PROKER UNGGULAN
+    ========================================== -->
+    <section class="proker" id="proker">
+
+        <!-- Particle Background Container -->
+        <div id="proker-particles"></div>
+
+        <div class="section-header">
+            <div class="section-badge green">
+                <i class="ri-calendar-check-line"></i> Program Kerja
+            </div>
+            <h2 class="section-title">Program Kerja <span>Unggulan</span></h2>
+            <p class="section-subtitle">
+                Program-program inovatif yang kami rancang untuk mengembangkan potensi
+                dan mempererat kebersamaan seluruh warga sekolah.
+            </p>
+        </div>
+
+        <div class="container proker__container">
+            <!-- Swiper -->
+            <div class="swiper prokerSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="proker__card-3d" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                            data-tilt-glare="true" data-tilt-max-glare="0.3">
+                            <div class="proker__card-3d-img">
+                                <img src="assets/img/download (3).jpg" alt="Olimpiade Sains">
+                                <span class="proker__tag-3d">Akademik</span>
+                            </div>
+                            <div class="proker__card-3d-content">
+                                <h3>Olimpiade Sains</h3>
+                                <p>Kompetisi ilmu pengetahuan antar kelas yang mendorong semangat belajar dan prestasi
+                                    akademik siswa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="proker__card-3d" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                            data-tilt-glare="true" data-tilt-max-glare="0.3">
+                            <div class="proker__card-3d-img">
+                                <img src="assets/img/download (4).jpg" alt="Bakti Sosial">
+                                <span class="proker__tag-3d" style="background:#3B82F6">Sosial</span>
+                            </div>
+                            <div class="proker__card-3d-content">
+                                <h3>Bakti Sosial</h3>
+                                <p>Kegiatan sosial kemasyarakatan untuk menumbuhkan rasa kepedulian dan empati pada
+                                    lingkungan sekitar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="proker__card-3d" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                            data-tilt-glare="true" data-tilt-max-glare="0.3">
+                            <div class="proker__card-3d-img">
+                                <img src="assets/img/download (5).jpg" alt="Pentas Seni">
+                                <span class="proker__tag-3d" style="background:#F59E0B">Seni & Budaya</span>
+                            </div>
+                            <div class="proker__card-3d-content">
+                                <h3>Pentas Seni</h3>
+                                <p>Ajang kreativitas siswa dalam bidang seni pertunjukan, musik, tari, dan teater yang
+                                    memukau.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="proker__card-3d" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                            data-tilt-glare="true" data-tilt-max-glare="0.3">
+                            <div class="proker__card-3d-img">
+                                <img src="assets/img/download (6).jpg" alt="Gerakan Hijau">
+                                <span class="proker__tag-3d" style="background:#8B5CF6">Lingkungan</span>
+                            </div>
+                            <div class="proker__card-3d-content">
+                                <h3>Gerakan Hijau Sekolah</h3>
+                                <p>Program penghijauan dan kepedulian lingkungan dengan menanam pohon dan menjaga
+                                    kebersihan sekolah.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+                GALERI
+    ========================================== -->
+    <section class="galeri" id="galeri">
+        <div class="section-header">
+            <div class="section-badge green">
+                <i class="ri-gallery-fill"></i> Dokumentasi
+            </div>
+            <h2 class="section-title">Galeri <span>Kegiatan</span></h2>
+            <p class="section-subtitle">
+                Potret momen kebersamaan dan aksi nyata OSIS & MPK dalam berbagai program sekolah.
+            </p>
+        </div>
+
+        <div class="container galeri__grid">
+            <div class="galeri__card">
+                <img src="assets/img/DJI_20260421094347_0028_D.JPG" alt="Kegiatan 1">
+                <div class="galeri__overlay">
+                    <h4>Upacara Bendera</h4>
+                    <p>Kegiatan rutin apel pagi</p>
+                </div>
+            </div>
+            <div class="galeri__card">
+                <img src="assets/img/DJI_20260427112136_0042_D.JPG" alt="Kegiatan 2">
+                <div class="galeri__overlay">
+                    <h4>Kegiatan Lapangan</h4>
+                    <p>Kompak bersama seluruh siswa</p>
+                </div>
+            </div>
+            <div class="galeri__card">
+                <img src="assets/img/FRS00737.JPG" alt="Kegiatan 3">
+                <div class="galeri__overlay">
+                    <h4>Rapat Koordinasi</h4>
+                    <p>Pembahasan proker bulanan</p>
+                </div>
+            </div>
+            <div class="galeri__card">
+                <img src="assets/img/download (3).jpg" alt="Kegiatan 4" onerror="this.src='assets/img/FRS00737.JPG'">
+                <div class="galeri__overlay">
+                    <h4>Diskusi Terbuka</h4>
+                    <p>Penyampaian aspirasi siswa</p>
+                </div>
+            </div>
+            <div class="galeri__card">
+                <img src="assets/img/download (4).jpg" alt="Kegiatan 5"
+                    onerror="this.src='assets/img/DJI_20260421094347_0028_D.JPG'">
+                <div class="galeri__overlay">
+                    <h4>Event Tahunan</h4>
+                    <p>Perayaan HUT Sekolah</p>
+                </div>
+            </div>
+            <div class="galeri__card">
+                <img src="assets/img/download (5).jpg" alt="Kegiatan 6"
+                    onerror="this.src='assets/img/DJI_20260427112136_0042_D.JPG'">
+                <div class="galeri__overlay">
+                    <h4>Bakti Sosial</h4>
+                    <p>Berbagi kepada sesama</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+                ALUMNI TESTIMONIALS
+    ========================================== -->
+    <section class="alumni" id="alumni">
+        <div class="section-header">
+            <div class="section-badge green">
+                <i class="ri-chat-quote-line"></i> Jejak Langkah
+            </div>
+            <h2 class="section-title">Kisah <span>Alumni</span></h2>
+            <p class="section-subtitle">
+                Mendengar langsung pengalaman dan manfaat berorganisasi dari para purna tugas OSIS dan MPK.
+            </p>
+        </div>
+
+        <div class="container alumni__container">
+            <div class="swiper alumni-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/ketua.png" alt="Ahmad Fikri">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Ahmad Fikri</h4>
+                                <span class="alumni__position">Ketua OSIS 2023/2024</span>
+                                <p class="alumni__quote">
+                                    "Pengalaman menjadi pengurus memberikan saya bekal kepemimpinan yang sangat berguna
+                                    di dunia perkuliahan. Jangan ragu untuk bergabung dan berkontribusi!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/wakil.png" alt="Nisa Salsabila">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Nisa Salsabila</h4>
+                                <span class="alumni__position">Ketua MPK 2022/2023</span>
+                                <p class="alumni__quote">
+                                    "Di MPK, saya belajar bagaimana menyuarakan aspirasi dengan bijak dan mengawasi
+                                    jalannya program kerja secara objektif. Masa SMA yang sangat berharga."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/ketua.png" alt="Bagas Dwi">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Bagas Dwi</h4>
+                                <span class="alumni__position">Wakil Ketua OSIS 2023</span>
+                                <p class="alumni__quote">
+                                    "Berorganisasi mengajarkan saya manajemen waktu yang luar biasa. Membagi waktu
+                                    antara belajar dan urusan organisasi adalah tantangan seru yang membentuk karakter."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/wakil.png" alt="Dina Mariana">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Dina Mariana</h4>
+                                <span class="alumni__position">Sekretaris MPK 2024</span>
+                                <p class="alumni__quote">
+                                    "Keluarga kedua yang mengajarkan tanggung jawab nyata. Dari menyusun proposal hingga
+                                    mengeksekusi event, semuanya jadi pelajaran hidup yang tidak ternilai harganya."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 1 Copy -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/ketua.png" alt="Ahmad Fikri">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Ahmad Fikri</h4>
+                                <span class="alumni__position">Ketua OSIS 2023/2024</span>
+                                <p class="alumni__quote">
+                                    "Pengalaman menjadi pengurus memberikan saya bekal kepemimpinan yang sangat berguna
+                                    di dunia perkuliahan. Jangan ragu untuk bergabung dan berkontribusi!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 Copy -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/wakil.png" alt="Nisa Salsabila">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Nisa Salsabila</h4>
+                                <span class="alumni__position">Ketua MPK 2022/2023</span>
+                                <p class="alumni__quote">
+                                    "Di MPK, saya belajar bagaimana menyuarakan aspirasi dengan bijak dan mengawasi
+                                    jalannya program kerja secara objektif. Masa SMA yang sangat berharga."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 Copy -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/ketua.png" alt="Bagas Dwi">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Bagas Dwi</h4>
+                                <span class="alumni__position">Wakil Ketua OSIS 2023</span>
+                                <p class="alumni__quote">
+                                    "Berorganisasi mengajarkan saya manajemen waktu yang luar biasa. Membagi waktu
+                                    antara belajar dan urusan organisasi adalah tantangan seru yang membentuk karakter."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 Copy -->
+                    <div class="swiper-slide">
+                        <div class="alumni__card">
+                            <div class="alumni__photo">
+                                <img src="assets/img/wakil.png" alt="Dina Mariana">
+                            </div>
+                            <div class="alumni__content">
+                                <h4 class="alumni__name">Dina Mariana</h4>
+                                <span class="alumni__position">Sekretaris MPK 2024</span>
+                                <p class="alumni__quote">
+                                    "Keluarga kedua yang mengajarkan tanggung jawab nyata. Dari menyusun proposal hingga
+                                    mengeksekusi event, semuanya jadi pelajaran hidup yang tidak ternilai harganya."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+                KONTAK
+    ========================================== -->
+    <section class="kontak" id="kontak">
+
+        <div class="section-header">
+            <div class="section-badge green">
+                <i class="ri-mail-send-line"></i> Hubungi Kami
+            </div>
+            <h2 class="section-title">Sampaikan <span>Aspirasimu</span></h2>
+            <p class="section-subtitle">
+                Punya pertanyaan, saran, atau ingin berkolaborasi? Kami siap mendengar
+                dan merespons setiap pesan dari kamu.
+            </p>
+        </div>
+
+        <div class="container kontak__container">
+
+            <!-- Kartu Info Kontak -->
+            <div class="kontak__info">
+
+                <div class="kontak__info-card" id="kontakCard1">
+                    <div class="kontak__info-icon">
+                        <i class="ri-map-pin-2-line"></i>
+                    </div>
+                    <div>
+                        <h4>Alamat</h4>
+                        <p>Jl. Samanhudi No.93, Laweyan,<br>Kota Surakarta, Jawa Tengah</p>
+                    </div>
+                </div>
+
+                <div class="kontak__info-card" id="kontakCard2">
+                    <div class="kontak__info-icon" style="background:linear-gradient(135deg,#3B82F6,#1D4ED8)">
+                        <i class="ri-instagram-line"></i>
+                    </div>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p>@osis_smaawh<br>@mpk_smaawh</p>
+                    </div>
+                </div>
+
+                <div class="kontak__info-card" id="kontakCard3">
+                    <div class="kontak__info-icon" style="background:linear-gradient(135deg,#22C55E,#16A34A)">
+                        <i class="ri-whatsapp-line"></i>
+                    </div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+62 812-XXXX-XXXX<br>(Senin – Jumat, 08.00–15.00)</p>
+                    </div>
+                </div>
+
+                <div class="kontak__info-card" id="kontakCard4">
+                    <div class="kontak__info-icon" style="background:linear-gradient(135deg,#EC4899,#BE185D)">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>osis@smaawh.sch.id</p>
+                    </div>
+                </div>
+
+                <!-- Sosmed Row -->
+                <div class="kontak__social">
+                    <a href="#" class="kontak__social-btn" id="ksIG" aria-label="Instagram">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" class="kontak__social-btn" id="ksYT" aria-label="YouTube">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="#" class="kontak__social-btn" id="ksTT" aria-label="TikTok">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                    <a href="#" class="kontak__social-btn" id="ksWA" aria-label="WhatsApp">
+                        <i class="ri-whatsapp-fill"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Map Area -->
+            <div class="kontak__form" style="padding: 0; overflow: hidden; display: flex; min-height: 450px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48197.855060279035!2d112.236681!3d-7.608044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7841fd393aec33%3A0xe5e06401e9c99f6f!2sSMA%20AWH%20Tebuireng%20-%20Gerbang%20Dalam!5e1!3m2!1sen!2sid!4v1783137970918!5m2!1sen!2sid"
+                    width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+                FOOTER
+    ========================================== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <img src="assets/img/logosmaawh.png" alt="Logo">
+                <div>
+                    <h4>OSIS & MPK SMA AWH</h4>
+                    <span>Bhineka Tunas Pratiwi</span>
+                </div>
+            </div>
+            <div class="footer__links">
+                <a href="#home">Home</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#proker">Proker</a>
+
+                <a href="#kontak">Kontak</a>
+            </div>
+            <p class="footer__copy">© 2026 OSIS & MPK SMA A. Wahid Hasyim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Close Lightbox"><i class="ri-close-line"></i></button>
+            <img src="" alt="Full View">
+        </div>
+    </div>
+
+</body>
+
+</html>

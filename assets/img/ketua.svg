@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="380" height="520" viewBox="0 0 380 520">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#15803d" stop-opacity="0.1"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <ellipse cx="190" cy="200" rx="150" ry="170"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="190" cy="200" rx="155" ry="175" fill="#16a34a" opacity="0.2"/>
+  <ellipse cx="190" cy="200" rx="150" ry="170" fill="url(#grad)"/>
+  <circle cx="190" cy="160" r="65" fill="rgba(255,255,255,0.15)"/>
+  <path d="M80 400 Q190 310 300 400 L320 520 L60 520 Z" fill="rgba(255,255,255,0.1)"/>
+  <text x="190" y="480" font-family="sans-serif" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="middle">Ketua OSIS</text>
+</svg>

@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="300" height="420" viewBox="0 0 300 420">
+  <defs>
+    <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="150" cy="160" rx="120" ry="140" fill="#22c55e" opacity="0.2"/>
+  <ellipse cx="150" cy="160" rx="115" ry="135" fill="url(#grad2)"/>
+  <circle cx="150" cy="125" r="52" fill="rgba(255,255,255,0.15)"/>
+  <path d="M50 320 Q150 245 250 320 L265 420 L35 420 Z" fill="rgba(255,255,255,0.1)"/>
+  <text x="150" y="390" font-family="sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">Wakil Ketua</text>
+</svg>
