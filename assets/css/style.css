@@ -1,4 +1,4 @@
-﻿:root{
+:root{
 
     --primary:#16A34A;
     --secondary:#22C55E;
@@ -563,7 +563,7 @@ body{
     animation-delay:2s;
 }
 .hero__ketua{
-    margin-right:120px;
+    /* margin-right removed because we use a single combined image now */
 }
 .hero__stat{
     position:absolute;
@@ -3081,10 +3081,10 @@ body{
 }
 
 .hero__ketua {
-    max-height: 530px !important; /* Make it large and prominent */
+    max-height: 600px !important; /* Make it large and prominent */
     width: auto !important;
-    max-width: none !important;
-    left: 36% !important;
+    max-width: 90% !important;
+    left: 50% !important;
     right: auto !important;
     transform: translateX(-50%) !important;
     z-index: 6 !important;
@@ -3144,7 +3144,7 @@ body{
 /* Responsive updates for mobile and tablet views */
 @media(max-width:1200px) {
     .hero__image { min-height: 480px !important; }
-    .hero__ketua { max-height: 470px !important; left: 35% !important; }
+    .hero__ketua { max-height: 550px !important; left: 50% !important; }
     .hero__wakil { max-height: 400px !important; left: 68% !important; }
 }
 
@@ -3164,7 +3164,7 @@ body{
         max-width: 500px !important;
         margin: 30px auto 0 !important;
     }
-    .hero__ketua { max-height: 470px !important; left: 35% !important; }
+    .hero__ketua { max-height: 500px !important; left: 50% !important; }
     .hero__wakil { max-height: 400px !important; left: 68% !important; }
     .hero__stat { left: -10px !important; }
     .hero__stat--2 { right: -10px !important; }
@@ -3174,7 +3174,7 @@ body{
     .hero__title { font-size: 3.2rem !important; }
     .hero__school { font-size: 2rem !important; }
     .hero__image { min-height: 420px !important; }
-    .hero__ketua { max-height: 400px !important; left: 35% !important; }
+    .hero__ketua { max-height: 450px !important; left: 50% !important; }
     .hero__wakil { max-height: 340px !important; left: 68% !important; }
     .hero__stat, .hero__stat--2 {
         width: 120px !important;
@@ -3189,7 +3189,7 @@ body{
     .hero__title { font-size: 2.6rem !important; }
     .hero__school { font-size: 1.6rem !important; }
     .hero__image { min-height: 360px !important; }
-    .hero__ketua { max-height: 330px !important; left: 32% !important; }
+    .hero__ketua { max-height: 380px !important; left: 50% !important; }
     .hero__wakil { max-height: 280px !important; left: 68% !important; }
     .hero__profile {
         flex-direction: column !important;
